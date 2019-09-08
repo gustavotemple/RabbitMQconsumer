@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class QueueTwoImpl implements QueueTwo {
     @Override
     public void listen(String message) {
-        System.out.println("Consuming " + message);
+        System.out.println("QueueTwo: " + message);
     }
 }
