@@ -9,7 +9,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class DestinationsConfig {
 
     private Map<String, DestinationInfo> queues = new HashMap<>();
-    private Map<String, DestinationInfo> topics = new HashMap<>();
 
     public Map<String, DestinationInfo> getQueues() {
         return queues;
@@ -17,14 +16,6 @@ public class DestinationsConfig {
 
     public void setQueues(Map<String, DestinationInfo> queues) {
         this.queues = queues;
-    }
-
-    public Map<String, DestinationInfo> getTopics() {
-        return topics;
-    }
-
-    public void setTopics(Map<String, DestinationInfo> topics) {
-        this.topics = topics;
     }
 
     // DestinationInfo stores the Exchange name and routing key used
