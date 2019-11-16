@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 public class ListenerQueueOneImpl implements ListenerQueueOne {
     @Override
     public void listen(String message) {
-        System.out.println("QueueOne: " + message);
+        System.out.println("queue1: " + message);
     }
 }
