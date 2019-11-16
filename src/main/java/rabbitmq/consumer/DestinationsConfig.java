@@ -19,7 +19,7 @@ public class DestinationsConfig {
     }
 
     // DestinationInfo stores the Exchange name and routing key used
-    // by our producers when posting messages
+    // by producers when posting messages
     static class DestinationInfo {
 
         private String exchange;

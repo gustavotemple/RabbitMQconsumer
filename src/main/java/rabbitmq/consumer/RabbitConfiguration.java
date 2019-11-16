@@ -28,7 +28,7 @@ public class RabbitConfiguration {
                             .build();
                     amqpAdmin.declareExchange(ex);
                     Queue q = QueueBuilder.durable(
-                            destination.getRoutingKey())
+                            key)
                             .build();
                     amqpAdmin.declareQueue(q);
                     Binding b = BindingBuilder.bind(q)

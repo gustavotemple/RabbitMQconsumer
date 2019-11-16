@@ -1,10 +1,10 @@
-package rabbitmq.consumer.queues;
+package rabbitmq.consumer.listeners;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
-public interface QueueThree {
+public interface ListenerQueueTwo {
 
-    @RabbitListener(queues = "queue_three")
+    @RabbitListener(queues = "queue2")
     public void listen(String message);
 
 }
